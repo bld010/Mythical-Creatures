@@ -141,7 +141,7 @@ describe('Sphinx', () => {
     assert.equal(sphinx.heroesEaten, 1);
   });
 
-  it.skip('should scream with rage if a hero gets all riddles correct', () => {
+  it('should scream with rage if a hero gets all riddles correct', () => {
     const sphinx = new Sphinx();
     const riddle1 = {
       riddle: 'What word becomes shorter when you add two letters to it?', 
