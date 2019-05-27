@@ -1,7 +1,8 @@
 class Sphinx {
   constructor() {
-  this.name = null
-  this.riddles = []
+  this.name = null;
+  this.riddles = [];
+  this.heroesEaten = 0;
   }
 
 
@@ -17,7 +18,9 @@ class Sphinx {
       return arrayItem.answer == answerGuess;
     })  
     this.riddles.splice(answerIndex, 1)
+    return 'That wasn\'t that hard, I bet you don\'t get the next one'
   }
+
 }
 
 module.exports = Sphinx; 
